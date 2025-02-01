@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device=width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+  <style>
+    * {
+      box-sizing: border-box
+    }
+
+    /* Add padding to containers */
+    .container {
+      padding: 16px;
+
+    }
+
+    .im {
+      padding: 16px;
+      border: 2px solid green;
+      background-color: white;
+
+
+    }
+
+    /* Full-width input fields */
+    input[type=text],
+    input[type=password],
+    input[type=file],
+    input[type=email],
+    input[type=number],
+    textarea[type=text] {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    .add {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .form-select {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0 22px 0;
+      display: inline-block;
+      border: none;
+      background: #f1f1f1;
+    }
+
+
+    input[type=text]:focus,
+    input[type=password]:focus,
+    input[type=email]:focus,
+    input[type=number]:focus,
+    input[type=text]:focus,
+    .add:focus,
+    .sel:focus {
+      background-color: rgb(233, 234, 233);
+      outline: none;
+    }
+
+
+
+    /* Overwrite default styles of hr */
+    hr {
+      border: 1px solid green;
+      margin-bottom: 25px;
+    }
+
+    @media only screen and (max-width: 663px) {
+  .myclass{
+    display: none;
+  }
+  .first{
+    display:none;
+  }
+  .second{
+    display: block !important;
+  }
+  
+}
+.second{
+  display: none;
+}
+  </style>
+</head>
+
+<body>
+
+
+    <div class="row m-0 p-0 ">
+        <div class="col-sm-12 m-0 p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./images/logoteam.png" height="70vh"></a>
+                  <h3 class="navbar-text mx-auto me-1 myclass"><b>Welcome To User Panel</b></h3>
+                    <span class="navbar-text ms-auto"><img src="./images/man.png" height="60vh" ></span>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div>
+
+
+
+    <!--navbar start-->
+<div class="row m-0 p-0 sticky-top ">
+    <nav class="navbar navbar-expand-lg navbar-light bg-success">
+      <div class="container-fluid">
+        <a class="navbar-brand d-flex  " href="./user.html" style="color:white;"><i style="padding-top: 5px;" class="fa-solid fa-home"></i>&nbsp;<span class="first">Dashboard</span> <span style="padding-left: 39px;" class="second">User Deshboard</span> </a>
+        <button class="navbar-toggler "    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse fw-bolder" id="navbarNav">
+          <ul class="navbar-nav ms-auto ">
+            <li class="nav-item dropdown mi " >
+              <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              User
+              </a>
+              <ul class="dropdown-menu dropdown bg-success" aria-labelledby="navbarDarkDropdownMenuLink">
+                <li><a class="dropdown-item text-light" href="./adduser.html">Add User</a></li>
+                <li><a class="dropdown-item text-light" href="./userProfile.html">User Profile</a></li>
+              </ul>
+            </li>
+            <li class="nav-item mi">
+              <a class="nav-link active" aria-current="page" href="./upload.html"
+                  style="color:white;"> Upload</a>
+          </li>
+            <li class="nav-item mi">
+              <a class="nav-link active" aria-current="page" href="./tableShowUpload.html" style="color:white;"> View Files</a>
+            </li>
+            <li class="nav-item mi">
+              <a class="nav-link active " href="./feedback.html" style="color:white;">Feedback</a>
+            </li>
+            <li class="nav-item mi">
+              <a class="nav-link active" href="./login.html" style="color:white;">Logout</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  
+  </div>
+
+
+
+
+
+
+
+
+  <div class="row m-0 p-0 pt-3" style="background-color:rgb(225, 239, 252)">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-6">
+
+      <form action="login.html" method="post">
+
+        <div class="container im">
+          <h1>Register</h1>
+          <p>Please fill in this form to create an account.</p>
+          <hr>
+          <b>Name</b><input type="text" placeholder="Enter Name" name="name" id="name" class="form-control" required>
+
+          <b>Email</b><input type="email" placeholder="Enter Email" name="email" id="email" required
+            class="form-control">
+
+
+          <b>Type of User</b><select class="form-select sel" aria-label="Default select example">
+            <option selected>Select user</option>
+            <option value="1">Staff</option>
+            <option value="2">Agent</option>
+            <option value="3">Accountant</option>
+            <option value="4">Sub Admin</option>
+          </select>
+
+          <b>Designation</b><select class="form-select sel" aria-label="Default select example">
+            <option selected>Select Designation</option>
+            <option value="1">Senior Software Developer</option>
+            <option value="2">Junior Software Developer</option>
+            <option value="3">Tech Intern</option>
+            <option value="4">Employee</option>
+          </select>
+
+          <label for="mobno"><b>Contact</b></label>
+          <input type="number" class="form-control" id="inputGroupFile02" placeholder="Enter Mobile number">
+
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" required class="form-control">
+          <label for="address"><b>Address</b></label>
+          <textarea class="form-control add" id="exampleFormControlTextarea1" rows="3"></textarea>
+          <hr>
+
+
+          <center><input type="reset" class="btn btn-secondary">
+            <input type="submit" class="btn btn-success" value="submit">
+          </center>
+      </form>
+    </div>
+  </div>
+  <div class="col-sm-4 mt-5">
+    <div class="alert alert-primary d-flex align-items-center" role="alert">
+      <h3><i class="bi bi-question-circle me-2" width="24" height="24" role="img" aria-label="Success:">
+          <use xlink:href="#check-circle-fill" />
+        </i>
+        May I Help You?</h3>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingOne">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            <i class="bi bi-arrow-right-circle"></i>&emsp;Step 1: Email Address
+
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>- Enter a valid email address to receive confirmation emails and notifications.</p>
+            <p>- Ensure your email address is unique and not already registered.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingTwo">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            <i class="bi bi-arrow-right-circle"></i>&emsp;Step 2: Strong Password
+
+
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>- Password requirements:</p>
+            <p>- Minimum 8 characters</p>
+            <p>- At least 1 uppercase letter</p>
+            <p> - At least 1 lowercase letter</p>
+            <p>- At least 1 number</p>
+            <p>- At least 1 special character</p>
+            <p>- Tips: Use a combination of letters, numbers, and special characters.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingThree">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            <i class="bi bi-arrow-right-circle"></i>&emsp;Step 3: Basic Information
+
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>- First Name: Enter your full name.</p>
+
+            <p>- Designation: Enter your users post.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFour">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            <i class="bi bi-arrow-right-circle"></i>&emsp;What is file Tracking
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>File tracking refers to the process of monitoring and managing files throughout their lifecycle, from
+              creation to deletion. It involves tracking file modifications, movements, and access to ensure security,
+              compliance, and efficiency.</p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingFive">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            <i class="bi bi-arrow-right-circle"></i>&emsp;Is my Data Secure
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>We take data security seriously. Our top priority is protecting your files and ensuring their
+              confidentiality, integrity, and availability.</p>
+            <p>Additional Security Features</p>
+            <p>1. File Access Logging: Monitor file activity. </p>
+            <p> 2. Real-time Threat Detection: Identify and respond to potential threats. </p>
+            <p> 3. Regular Software Updates: Ensure latest security patches.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="flush-headingSix">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            <i class="bi bi-arrow-right-circle"></i>&emsp; How do I upload files?
+
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
+          data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>File Upload Guidelines</p>
+
+            <p>- Maximum file size: 2GB</p>
+            <p>- Allowed file types: [list]</p>
+            <p>- File naming conventions: [guidelines]</p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-sm-1"></div>
+  </div>
+
+  <div class="row m-0 p-0 pt-2 mt-5" style=" background-color:rgb(49, 48, 48);">
+    <div class="col-sm-1"></div>
+    <div class="col-sm-5">
+      <p class="text-center text-light">
+        &copy; Copyright to Kamadgiri Software Solutions Private</p>
+    </div>
+    <div class="col-sm-5">
+      <p class="text-center text-light">
+        Developedbyed by Kamadgiri Software Solution
+      </p>
+    </div>
+    <div class="col-sm-1"></div>
+
+  </div>
+</body>
+
+</html>

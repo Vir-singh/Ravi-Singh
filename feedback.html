@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Feedback</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./style.css" type="text/css" rel="stylesheet">
+    <style>
+        .feedback-card {
+            border: 1px solid #ddd;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 20px auto;
+            text-align: center;
+            max-width: 600px;
+            /* Control the max width of the card */
+        }
+
+        .star-rating {
+            color: gold;
+            font-size: 1.5em;
+            /* Larger star rating */
+        }
+
+        .carousel-item {
+            height: auto;
+            /* Automatic height based on content */
+        }
+
+        .carousel {
+            margin: 20px;
+            /* Add some margin around the carousel */
+        }
+
+
+        /* Gradient Background */
+
+
+
+        .table-wrapper {
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            padding: 30px;
+            margin: 50px auto;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 1200px;
+        }
+
+
+        /* Table Styling */
+        .table thead {
+            background-color: #6e8efb;
+            color: white;
+        }
+
+        .table tbody tr:hover {
+            background-color: #f4f5f7;
+        }
+
+        .pagination {
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .table {
+                font-size: 14px;
+            }
+
+            .table-wrapper {
+                padding: 20px;
+            }
+        }
+
+        .myimg {
+            transition: all ease-in-out 0.3s;
+        }
+
+        .myimg:hover {
+            transform: translateY(-20px);
+            box-shadow: 0px 0px 10px 10px rgb(2, 104, 2);
+
+        }
+
+        .mi {
+            width: 100px;
+            display: block;
+            border-radius: 7px;
+            text-align: center;
+            color: white;
+        }
+        @media only screen and (max-width: 663px) {
+  .myclass{
+    display: none;
+  }
+  .first{
+    display:none;
+  }
+  .second{
+    display: block !important;
+  }
+  
+}
+.second{
+  display: none;
+}
+ 
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="row m-0 p-0 ">
+        <div class="col-sm-12 m-0 p-0">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./images/logoteam.png" height="70vh"></a>
+                  <h3 class="navbar-text mx-auto me-1 myclass"><b>Welcome To User Panel</b></h3>
+                    <span class="navbar-text ms-auto"><img src="./images/man.png" height="60vh" ></span>
+                    
+                  </div>
+                </div>
+              </nav>
+        </div>
+    </div><!
+    </div><!--logo end-->
+    <!--navbar start-->
+    <div class="row m-0 p-0 sticky-top ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-success">
+          <div class="container-fluid">
+            <a class="navbar-brand d-flex  " href="./user.html" style="color:white;"><i style="padding-top: 5px;" class="fa-solid fa-home"></i>&nbsp;<span class="first">Dashboard</span> <span style="padding-left: 39px;" class="second">User Deshboard</span> </a>
+            <button class="navbar-toggler "    type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon" ></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarNav">
+              <ul class="navbar-nav ms-auto ">
+                <li class="nav-item dropdown mi " >
+                  <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  User
+                  </a>
+                  <ul class="dropdown-menu dropdown bg-success" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <li><a class="dropdown-item text-light" href="./adduser.html">Add User</a></li>
+                    <li><a class="dropdown-item text-light" href="./userProfile.html">User Profile</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item mi">
+                  <a class="nav-link active" aria-current="page" href="./upload.html"
+                      style="color:white;"> Upload</a>
+              </li>
+                <li class="nav-item mi">
+                  <a class="nav-link active" aria-current="page" href="./tableShowUpload.html" style="color:white;"> View File</a>
+                </li>
+                <li class="nav-item mi">
+                  <a class="nav-link active " href="./feedback.html" style="color:white;">Feedback</a>
+                </li>
+                <li class="nav-item mi">
+                  <a class="nav-link active" href="./login.html" style="color:white;">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      
+      </div>
+    <!--navbar end-->
+    <!--- general Feedback-->
+    <div class="container mt-2">
+        <h2 class="text-center hc fw-bolder">User Feedback</h2>
+        <div id="feedbackCarousel" class="carousel slide" data-ride="carousel" data-interval="3000">
+            <div class="carousel-inner feedbg">
+                <div class="carousel-item active">
+                    <div class="feedback-card feeddatabg">
+                        <img src="https://avatar.iran.liara.run/public/50" height="60px " width="60px"
+                            alt="User Image" class="img-fluid rounded-circle mb-2">
+                        <h5>Durgesh Kumar</h5>
+                        <div class="star-rating">
+                            ★★★★☆
+                        </div>
+                        <hr>
+                        <p>This is a description of the feedback given by Durgesh Kumar.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="feedback-card feeddatabg">
+                        <img src=https://avatar.iran.liara.run/public" height="60px" width="60px" alt="User Image"
+                            class="img-fluid rounded-circle mb-2">
+                        <h5>Mithilesh Singh</h5>
+                        <div class="star-rating">
+                            ★★★★★
+                        </div>
+                        <hr>
+                        <p>This is a description of the feedback given Mithilesh Singh.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="feedback-card feeddatabg">
+                        <img src="https://avatar.iran.liara.run/public" height="60px " width="60px" alt="User Image"
+                            class="img-fluid rounded-circle mb-2">
+                        <h5>Durgesh Kumar</h5>
+                        <div class="star-rating">
+                            ★★★☆☆
+                        </div>
+                        <hr>
+                        <p>This is a description of the feedback given by  Durgesh Kumar.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="feedback-card feeddatabg">
+                        <img src="https://avatar.iran.liara.run/public" height="60px" width="60px" alt="User Image"
+                            class="img-fluid rounded-circle mb-2">
+                        <h5>Mithilesh 4</h5>
+                        <div class="star-rating">
+                            ★★★★★
+                        </div>
+                        <hr>
+                        <p>This is a description of the feedback given by Mithilesh 4.</p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#feedbackCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#feedbackCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <!--- generalFeedback End-->
+    <div class="container mt-2 table-wrapper">
+
+
+        <div class="table-responsive">
+
+            <!-- Table -->
+            <table class="table table-hover table-bordered text-center">
+                <thead>
+                    <tr class="bg-primary">
+                        <th scope="col">Serial Number</th>
+                        <th scope="col">Date</th>
+                        <th scope="col">Name</th>
+                        <th scope="col">Degignation</th>
+                        <th scope="col">Feedback</th>
+
+                    </tr>
+                </thead>
+                <tbody id="fileTable">
+                    <tr>
+                        <td>1</td>
+                        <td>21/09/2024</td>
+                        <td>Durgesh</td>
+                        <td>Tech Intern</td>
+                        <td>Getting familiar with technology with expert criteria</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>21/09/2024</td>
+                        <td>Vikas</td>
+                        <td>Product Manager</td>
+                        <td>Got the best fame of company for leading business.</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>21/09/2024</td>
+                        <td>Amit</td>
+                        <td>Developer</td>
+                        <td>I've chance to explore my development skill here with full pace.</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>21/09/2024</td>
+                        <td>Sandeep</td>
+                        <td>UI/UX Designer</td>
+                        <td>Creative theme UI/UX with such great team, makes my skill zeal with joy.</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>21/09/2024</td>
+                        <td>Sagar</td>
+                        <td>Tester</td>
+                        <td>Getting skill upgraded with testing and debugging, have great experiece.</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>21/09/2024</td>
+                        <td>Vinay</td>
+                        <td>Team Lead</td>
+                        <td>Leading teams makes easy with such members and experiece is great.</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>21/09/2024</td>
+                        <td>Er. Satyam Mishra</td>
+                        <td>Project Manager</td>
+                        <td>We successfully hit all the projects at high aspects with great team regards.</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+            <!-- Pagination -->
+            <nav aria-label="Page navigation">
+                <ul class="pagination">
+                    <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="row m-0 p-0 pt-2 mt-5"  style=" background-color:rgb(49, 48, 48);">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-5"> 
+          <p class="text-center text-light">
+            &copy; Copyright to Kamadgiri Software Solutions Private</p></div>
+        <div class="col-sm-5"><p class="text-center text-light">
+          Developedbyed by Kamadgiri Software Solution
+           </p> </div>
+        <div class="col-sm-1"></div>
+  
+      </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.5.0/bootstrap-icons.min.js"></script>
+</body>
+
+</html>
